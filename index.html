@@ -24,69 +24,17 @@
    </form> 
 </div>
 
-<!-- Load Video Player -->
+<!-- Load Video Menu -->
 
 <script type="text/javascript">
     
 function results(){
     var sessionalias = "mp" + document.getElementById('videoID').value;
     initialise("pex-gcc.com", sessionalias, "1264", "Agent Video", "2021");
-    document.getElementById("foundation").innerHTML = ('<div class="navbar"><a href="#" onclick="enableMute()"><i class="fa fa-fw fa-headphones"></i>Mute Sound</a><a href="#" onlick="muteAudioStreams();" id="id_muteaudio" class="webrtcbutton btn-audio"><i class="fa fa-fw fa-microphone-slash"></i>Mute Mic</a><a class="active" href="#" onclick="https://kforney1205.github.io/agentjoin/" id="id_disconnect" class="webrtcbutton btn-disconnect"><i class="fa fa-fw fa-sign-out"></i> Disconnect</a></div><br><div width="100%" height="100%" style="overflow:auto" id="viewport"><video width="500px" id="video" autoplay="autoplay"/></div><br>');
+    document.getElementById("foundation").innerHTML = '<div class="navbar"><a href="#" onclick="enableMute()"><i class="fa fa-fw fa-headphones"></i>Mute Sound</a><a href="#" onlick="muteAudioStreams();" id="id_muteaudio" class="webrtcbutton btn-audio"><i class="fa fa-fw fa-microphone-slash"></i>Mute Mic</a><a class="active" href="#" onclick="window.location=&apos https://kforney1205.github.io/1p-agent-join/&apos;" id="id_disconnect" class="webrtcbutton btn-disconnect"><i class="fa fa-fw fa-sign-out"></i> Disconnect</a></div><br><div width="100%" height="100%" style="overflow:auto" id="viewport"><video width="500px" id="video" autoplay="autoplay"/></div><br>';
 }
 
 </script>
-
-
-<!-- 
-
-<div class="wrapper">
-    <div class="container">
-        <form>
-            <h1>
-                Create a New Video Session
-            </h1>
-            <div>
-                <div class="lineitem">
-                    <label>Session Type</label>
-                    <select name="sessionType" id="sessionType">
-                        <option value="">- - - - -</option>
-                        <option value="medconsult">Medical Consultation</option>
-                    </select>
-                </div>
-                    <br>
-                <div class="lineitem">
-                  <label>Session ID</label><br>
-                    <button class="actionbuttons" type="button" onclick="document.getElementById('randomAlias').value = getRndInteger(1001,999999)">Generate ID</button> 
-                    <input type="text" id="randomAlias" name="randomAlias" maxlength="7" class="medOption" placeholder="generate a 1-time session ID"required>
-                </div>
-                    <br>
-            </div>
-            
-        <div class="inv" id="medconsult">
-            <h2>
-                Instant Medical Consult
-            </h2>
-            <div class="lineitem">
-                <label>Patient Last Name</label>
-                <input type="text" id="patientLname" name="patientLname" maxlength="90" class="medOption" value="" placeholder="" required>
-            </div>
-            <div>
-                <div class="lineitem">
-                   <label>Patient ID</label>
-                    <input type="text" id="patientID" name="patientID" maxlength="90" class="medOption" value="" placeholder="network ID number" required><br>
-                </div>
-            </div>
-             <div class="btns"><br>
-                <button id="submit" type="submit" onclick="return results();">Generate Session Info Now</button>
-            </div>
-        </div>
-     
-           </div>
-           
-        </form>
-    </div>
-</div> -->
-
 
 </body>
 </html>
