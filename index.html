@@ -29,7 +29,7 @@
 <script type="text/javascript">
     
 function results(){
-    var sessionalias = document.getElementById('videoID').value;
+    var sessionalias = "mp" + document.getElementById('videoID').value;
     initialise("pex-gcc.com", sessionalias, "1264", "Agent Video", "2021");
 
     document.write('<div class="navbar"><a href="#" onclick="enableMute()"><i class="fa fa-fw fa-headphones"></i>Mute Sound</a><a href="#" onlick="muteAudioStreams();" id="id_muteaudio" class="webrtcbutton btn-audio"><i class="fa fa-fw fa-microphone-slash"></i>Mute Mic</a><a class="active" href="#" onclick="window.location="https://kforney1205.github.io/agentjoin/";" id="id_disconnect" class="webrtcbutton btn-disconnect"><i class="fa fa-fw fa-sign-out"></i> Disconnect</a></div>')
